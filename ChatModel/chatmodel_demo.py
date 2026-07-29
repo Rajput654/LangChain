@@ -1,0 +1,9 @@
+from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
+chatModel=ChatOpenAI(model='gpt-4')
+
+result=chatModel.invoke("what is the capital if india?")
+
+print(result.content)
